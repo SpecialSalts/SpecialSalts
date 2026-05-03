@@ -4,382 +4,199 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Special Salts | Bathe in Blessings</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Handcrafted bath salts and body scrubs by young entrepreneur Tyler in Byford WA.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f2ec;
-  --panel:#fffdfa;
-  --soft:#f0e8dd;
-  --ink:#1f1b18;
-  --muted:#6d6359;
-  --accent:#c7a76a;
-  --line:#e6ddd1;
-  --shadow:0 18px 48px rgba(24,18,12,0.08);
-  --radius:24px;
+--bg:#f8f4ee; --panel:#fffdfa; --ink:#1e1a17; --muted:#6e645b; --line:#e8ddd0;
+--green:#235d25; --gold:#c7a76a; --shadow:0 20px 60px rgba(24,18,12,.08); --radius:28px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:'Inter',sans-serif;
-  line-height:1.7;
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,sans-serif;line-height:1.7}
+img{max-width:100%;display:block} a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.topbar{background:#111;color:#fff;font-size:14px}
+.topbar .wrap{padding:12px 22px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;text-align:center}
+.topbar a{font-weight:700;border-bottom:1px solid rgba(255,255,255,.35)}
+.hero{
+min-height:82vh;color:#fff;display:grid;align-items:end;
+background:linear-gradient(180deg,rgba(10,10,10,.18),rgba(10,10,10,.72)),url('hero-market.jpg') center/cover no-repeat;
 }
-a{color:inherit}
-img{max-width:100%;display:block}
-.wrap{
-  max-width:1160px;
-  margin:0 auto;
-  padding:0 22px;
-}
-.topbar{
-  background:#111;
-  color:rgba(255,255,255,0.9);
-  font-size:14px;
-}
-.topbar .wrap{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  padding:12px 22px;
-  text-align:center;
-}
-.topbar a{
-  text-decoration:none;
-  font-weight:600;
-}
-header{
-  padding:0;
-}
-.header-image{
-  width:100%;
-  display:block;
-}
-section{
-  padding:78px 0;
-}
-.section-soft{
-  background:linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(240,232,221,0.42) 100%);
-  border-top:1px solid rgba(230,221,209,0.65);
-  border-bottom:1px solid rgba(230,221,209,0.65);
-}
-.section-title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(30px,4vw,42px);
-  text-align:center;
-  margin:0 0 14px;
-  letter-spacing:0.2px;
-}
-.section-intro{
-  max-width:760px;
-  margin:0 auto;
-  text-align:center;
-  color:var(--muted);
-  font-size:18px;
-}
-.divider{
-  width:72px;
-  height:2px;
-  margin:26px auto 34px;
-  background:var(--accent);
-}
-.panel{
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-}
-.story-grid{
-  display:grid;
-  grid-template-columns:0.95fr 1.05fr;
-  gap:34px;
-  align-items:center;
-  margin-top:20px;
-}
-.story-photo{
-  overflow:hidden;
-}
-.story-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  min-height:540px;
-}
-.story-copy{
-  padding:34px 34px 30px;
-}
-.story-copy p{
-  margin:0 0 18px;
-  color:var(--muted);
-  font-size:18px;
-}
-.caption{
-  margin-top:18px;
-  color:#8a7f74;
-  font-size:15px;
-}
-.badge-row{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  margin-top:34px;
-}
-.badge{
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:24px 18px;
-  text-align:center;
-  box-shadow:0 8px 24px rgba(24,18,12,0.04);
-}
-.badge h3{
-  margin:0 0 8px;
-  font-family:'Playfair Display',serif;
-  font-size:24px;
-}
-.badge p{
-  margin:0;
-  color:var(--muted);
-  font-size:15px;
-}
-.media-card{
-  max-width:860px;
-  margin:0 auto;
-  overflow:hidden;
-}
-.media-card img{
-  width:100%;
-}
-.use-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-  max-width:860px;
-  margin:34px auto 0;
-}
-.use-card{
-  padding:28px 24px;
-}
-.use-card h3{
-  margin:0 0 8px;
-  font-family:'Playfair Display',serif;
-  font-size:28px;
-}
-.use-card .amount{
-  font-size:20px;
-  font-weight:700;
-  color:var(--ink);
-}
-.use-card p{
-  margin:10px 0 0;
-  color:var(--muted);
-}
-.note{
-  max-width:760px;
-  margin:26px auto 0;
-  text-align:center;
-  color:var(--muted);
-  font-size:16px;
-}
-.cta{
-  max-width:860px;
-  margin:0 auto;
-  background:#111;
-  color:#fff;
-  border-radius:28px;
-  padding:44px 28px;
-  text-align:center;
-  box-shadow:var(--shadow);
-}
-.cta h2{
-  margin:0 0 12px;
-  font-family:'Playfair Display',serif;
-  font-size:38px;
-}
-.cta p{
-  max-width:640px;
-  margin:0 auto;
-  color:rgba(255,255,255,0.84);
-  font-size:18px;
-}
-.cta-button{
-  display:inline-block;
-  margin-top:22px;
-  background:#fff;
-  color:#111;
-  text-decoration:none;
-  border-radius:999px;
-  padding:14px 26px;
-  font-weight:700;
-  font-size:16px;
-}
-footer{
-  text-align:center;
-  padding:36px 20px 48px;
-  color:#8a7f74;
-  font-size:14px;
-}
+.hero-inner{padding:120px 0 56px}
+.hero-card{max-width:760px;background:rgba(17,17,17,.52);backdrop-filter:blur(8px);padding:34px;border-radius:32px;border:1px solid rgba(255,255,255,.14)}
+.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:800;color:#f0d899;margin:0 0 8px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(46px,8vw,82px);line-height:.96;margin:0 0 16px}
+.hero p{font-size:19px;margin:0;color:rgba(255,255,255,.92)}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:14px 22px;border-radius:999px;font-weight:800;font-size:15px}
+.btn.white{background:#fff;color:#111}.btn.green{background:var(--green);color:#fff}.btn.clear{border:1px solid rgba(255,255,255,.45)}
+section{padding:82px 0}
+.soft{background:linear-gradient(180deg,#fff, #f2e9dc)}
+.title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);text-align:center;margin:0 0 12px}
+.intro{max-width:780px;margin:0 auto;text-align:center;color:var(--muted);font-size:18px}
+.div{width:72px;height:2px;background:var(--gold);margin:24px auto 36px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.copy{padding:32px}
+.copy p{margin:0 0 16px;color:var(--muted);font-size:18px}
+.copy h3{font-family:'Playfair Display',serif;font-size:34px;margin:0 0 10px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+.tile{padding:24px;text-align:center}
+.tile h4{margin:0 0 8px;font-size:22px;font-family:'Playfair Display',serif}
+.tile p{margin:0;color:var(--muted);font-size:15px}
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+.pricecard{padding:30px}
+.pricecard h3{margin:0 0 12px;font-size:34px;font-family:'Playfair Display',serif}
+.line{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);font-weight:700}
+.quote{max-width:900px;margin:34px auto 0;padding:30px;text-align:center}
+.quote p{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,40px);margin:0 0 8px;line-height:1.2}
+.quote span{color:var(--muted);font-weight:700}
+footer{text-align:center;padding:40px 20px 54px;color:#8a7f74;font-size:14px}
 footer p{margin:6px 0}
-@media(max-width:1080px){
-  .use-grid[style]{grid-template-columns:1fr !important;}
-}
-@media(max-width:920px){
-  .story-grid{grid-template-columns:1fr}
-  .story-photo img{min-height:420px}
-  .badge-row{grid-template-columns:repeat(2,1fr)}
-  .use-grid{grid-template-columns:1fr}
+@media(max-width:980px){
+.grid2,.pricing{grid-template-columns:1fr}
+.tiles{grid-template-columns:repeat(2,1fr)}
+.hero{min-height:70vh}
 }
 @media(max-width:620px){
-  section{padding:58px 0}
-  .story-copy{padding:26px 22px 22px}
-  .story-copy p,.section-intro,.cta p{font-size:17px}
-  .badge-row{grid-template-columns:1fr}
-  .cta{padding:36px 20px}
-  .cta h2{font-size:32px}
+.tiles{grid-template-columns:1fr}
+.hero-card{padding:24px}
+.copy{padding:24px}
+.hero p,.intro,.copy p{font-size:17px}
 }
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <div class="wrap">
-    <span>Handcrafted natural recovery soaks.</span>
-    <a href="https://www.instagram.com/specialsalts/" target="_blank" rel="noopener noreferrer">@specialsalts</a>
-  </div>
+<div class="wrap">
+<span>Handcrafted in Byford WA · First market launched · Local enquiries welcome</span>
+<a href="https://www.facebook.com/profile.php?id=61560792312310" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/specialsalts/" target="_blank">Instagram</a>
+</div>
 </div>
 
-<header>
-  <img src="header.jpg" class="header-image" alt="Special Salts banner">
+<header class="hero">
+<div class="wrap hero-inner">
+<div class="hero-card">
+<p class="kicker">Bathe in Blessings</p>
+<h1>Special Salts</h1>
+<p>Handcrafted bath salts and body scrubs created by young entrepreneur Tyler in Byford, Western Australia.</p>
+<div class="btn-row">
+<a class="btn white" href="#story">Our Story</a>
+<a class="btn green" href="#products">Products & Pricing</a>
+<a class="btn clear" href="https://www.facebook.com/profile.php?id=61560792312310" target="_blank">Follow on Facebook</a>
+</div>
+</div>
+</div>
 </header>
 
-<section>
-  <div class="wrap">
-    <h2 class="section-title">Our Story</h2>
-    <div class="divider"></div>
-    <div class="story-grid">
-      <div class="story-photo panel">
-        <img src="tyler.jpg" alt="Tyler, creator of Special Salts">
-      </div>
-      <div class="story-copy panel">
-        <p>Special Salts began as a homeschool project created by Tyler.</p>
-        <p>Now 12 years old, Tyler first started making bath salt blends alongside his brothers two years ago, creating small batches to sell at Christmas time for family and friends.</p>
-        <p>As a young athlete playing multiple sports, Tyler was drawn to natural ways to support recovery after training and games. This sparked his interest in mineral salts, natural oils, and how simple ingredients can help the body relax and reset.</p>
-        <p>What began as a small family project has gradually grown into something bigger. Today, Tyler continues to develop his blends while learning about small business, product design, and selling through markets and social media.</p>
-        <p>Each batch is handcrafted using simple, natural ingredients chosen for their benefits.</p>
-        <div class="caption">Tyler, creator of Special Salts, learning about natural ingredients, product design, and small business through our homeschool journey.</div>
-      </div>
-    </div>
-  </div>
+<section id="story">
+<div class="wrap">
+<h2 class="title">Our Story & Market Launch</h2>
+<div class="div"></div>
+<div class="grid2">
+<div class="panel"><img src="story-market.jpg" alt="Tyler at first market"></div>
+<div class="panel copy">
+<h3>From homeschool project to first market</h3>
+<p>Special Salts began as a homeschool business project created by Tyler, a young local entrepreneur from Byford.</p>
+<p>Tyler first started making bath salt blends with his brothers, creating small batches for family, friends, and local supporters. As the idea grew, he began learning the real skills behind a small business: choosing ingredients, testing blends, designing labels, pricing products, packing orders, setting up market displays, and speaking with customers.</p>
+<p>As a young athlete, Tyler was especially interested in products that could be used after sport, training, busy days, or as thoughtful gifts.</p>
+<p>Launching at his first market gave Tyler the confidence to keep growing Special Salts, learning through experience, and sharing his products with the local community.</p>
+</div>
+</div>
+<div class="quote panel">
+<p>First market complete.</p>
+<span>Thank you to everyone who encouraged Tyler, visited the stall, shared the page, or supported his first launch.</span>
+</div>
+</div>
 </section>
 
-<section class="section-soft">
-  <div class="wrap">
-    <h2 class="section-title">Our Blends</h2>
-    <div class="divider"></div>
-    <p class="section-intro">Two thoughtfully developed blends, each with its own distinct feel and fragrance profile.</p>
-
-    <div class="story-grid" style="margin-top:38px;">
-      <div class="story-photo panel">
-        <img src="recovery.jpg" alt="Recovery Blend product image">
-      </div>
-      <div class="story-copy panel">
-        <h3 style="margin-top:0; font-family:'Playfair Display',serif; font-size:32px;">Recovery Blend</h3>
-        <p style="margin-top:0;"><strong>Soft floral relaxation</strong></p>
-        <p>A calming floral blend featuring lavender, geranium, and ylang ylang.</p>
-        <p>This gentle combination creates a soothing bath or foot soak experience, perfect for slowing down at the end of a busy day. The soft floral aroma brings a sense of calm and comfort, making it an ideal choice when you want to unwind and enjoy a quiet moment of relaxation.</p>
-        <p>Crafted with mineral salts and natural oils, Recovery Blend is designed to turn an ordinary bath into a simple self-care ritual.</p>
-      </div>
-    </div>
-
-    <div class="story-grid" style="margin-top:30px;">
-      <div class="story-copy panel">
-        <h3 style="margin-top:0; font-family:'Playfair Display',serif; font-size:32px;">Revive Blend</h3>
-        <p style="margin-top:0;"><strong>Fresh citrus mint uplift</strong></p>
-        <p>A bright and refreshing blend featuring lemon myrtle, lime, eucalyptus, and peppermint.</p>
-        <p>This uplifting combination offers a fresh, clean aroma that feels invigorating and energising. Revive Blend is ideal when you want a more vibrant bath or scrub experience, bringing a crisp citrus and mint fragrance that awakens the senses.</p>
-        <p>Blended with mineral salts and natural oils, Revive Blend adds a refreshing touch to your bathing routine.</p>
-      </div>
-      <div class="story-photo panel">
-        <img src="revive.jpg" alt="Revive Blend product image">
-      </div>
-    </div>
-  </div>
+<section class="soft" id="products">
+<div class="wrap">
+<h2 class="title">Products & Purpose</h2>
+<div class="div"></div>
+<p class="intro">Simple products, quality ingredients, and simple moments of care made easy.</p>
+<div class="tiles">
+<div class="tile panel"><h4>Bath Salts</h4><p>Designed for baths and foot soaks to help unwind and slow down.</p></div>
+<div class="tile panel"><h4>Body Scrubs</h4><p>Use in the shower to exfoliate skin and refresh your routine.</p></div>
+<div class="tile panel"><h4>Natural Ingredients</h4><p>Mineral salts, sugar, and carefully measured oils.</p></div>
+<div class="tile panel"><h4>Handmade Local</h4><p>Crafted in small batches in Byford, Western Australia.</p></div>
+</div>
+<div style="margin-top:30px" class="panel"><img src="whats-inside-updated.jpg" alt="What is inside Special Salts"></div>
+</div>
 </section>
 
 <section>
-  <div class="wrap">
-    <h2 class="section-title">What’s Inside</h2>
-    <div class="divider"></div>
-    <p class="section-intro">A clean, simple blend of ingredients chosen for their purpose.</p>
-    <div class="media-card panel">
-      <img src="ingredients.jpg" alt="Special Salts ingredients graphic">
-    </div>
-  </div>
+<div class="wrap">
+<h2 class="title">Signature Blends</h2>
+<div class="div"></div>
+
+<div class="grid2">
+<div class="panel"><img src="recovery.jpg" alt="Recovery Blend"></div>
+<div class="panel copy">
+<h3>Recovery Blend</h3>
+<p><strong>Rest • Unwind • Restore</strong></p>
+<p>A calming floral blend featuring lavender, geranium and ylang ylang.</p>
+<p>Perfect for evening baths, quiet moments, gifting, and winding down after busy days.</p>
+</div>
+</div>
+
+<div class="grid2" style="margin-top:28px">
+<div class="panel copy">
+<h3>Revive Blend</h3>
+<p><strong>Refresh • Uplift • Recharge</strong></p>
+<p>A bright citrus blend featuring lemon myrtle and fresh uplifting notes.</p>
+<p>Perfect when you want a fresh, energising bath or shower routine.</p>
+</div>
+<div class="panel"><img src="revive.jpg" alt="Revive Blend"></div>
+</div>
+
+</div>
 </section>
 
-<section class="section-soft">
-  <div class="wrap">
-    <h2 class="section-title">Products</h2>
-    <div class="divider"></div>
-    <p class="section-intro">We are currently offering bath salts and body salt scrubs in two sizes, with bath salts in white packaging and body salt scrubs in black packaging.</p>
-    <div class="badge-row" style="margin-top:38px; grid-template-columns:repeat(2,1fr);">
-      <div class="badge" style="text-align:left; padding:28px 26px;">
-        <h3>Bath Salts</h3>
-        <p>100g · $7</p>
-        <p>250g · $15</p>
-      </div>
-      <div class="badge" style="text-align:left; padding:28px 26px;">
-        <h3>Body Salt Scrubs</h3>
-        <p>100g · $10</p>
-        <p>250g · $20</p>
-      </div>
-    </div>
-    <p class="note">Mother’s Day gift hampers will also be available for our first market.</p>
-  </div>
-</section>
+<section class="soft" id="pricing">
+<div class="wrap">
+<h2 class="title">Current Pricing</h2>
+<div class="div"></div>
+<p class="intro">Available in both Recovery and Revive blends.</p>
 
-<section>
-  <div class="wrap">
-    <h2 class="section-title">How To Use</h2>
-    <div class="divider"></div>
-    <p class="section-intro">A simple guide for enjoying both product types at home.</p>
-    <div class="use-grid" style="grid-template-columns:repeat(3,1fr); max-width:1080px;">
-      <div class="use-card panel">
-        <h3>Foot Soak</h3>
-        <div class="amount">25g</div>
-        <p>Add to warm water, allow the salts to dissolve, and soak for 10–15 minutes.</p>
-      </div>
-      <div class="use-card panel">
-        <h3>Bath Soak</h3>
-        <div class="amount">50g</div>
-        <p>Add to a warm bath, allow the salts to dissolve fully, and soak for 15–20 minutes.</p>
-      </div>
-      <div class="use-card panel">
-        <h3>Body Salt Scrub</h3>
-        <div class="amount">Use as needed</div>
-        <p>Massage a small amount onto damp skin using gentle circular motions, then rinse thoroughly with warm water.</p>
-      </div>
-    </div>
-    <p class="note">Take care when using body scrub in the shower or bath, as oils and salts may make surfaces slippery. For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.</p>
-  </div>
+<div class="pricing">
+<div class="panel pricecard">
+<h3>Bath Salts</h3>
+<div class="line"><span>100g</span><span>$7</span></div>
+<div class="line"><span>250g</span><span>$15</span></div>
+</div>
+
+<div class="panel pricecard">
+<h3>Body Scrubs</h3>
+<div class="line"><span>100g</span><span>$10</span></div>
+<div class="line"><span>250g</span><span>$20</span></div>
+</div>
+</div>
+
+<div class="quote panel" style="margin-top:28px">
+<p>Message us on Facebook first for local orders and gift enquiries, or follow along on Instagram.</p>
+</div>
+
+</div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="cta">
-      <h2>Follow the Journey</h2>
-      <p>Follow along on Instagram for new content, updates, behind the scenes, and to message us directly.</p>
-      <a class="cta-button" href="https://www.instagram.com/specialsalts/" target="_blank" rel="noopener noreferrer">Follow @specialsalts</a>
-    </div>
-  </div>
+<div class="wrap">
+<h2 class="title">Follow the Journey</h2>
+<div class="div"></div>
+<p class="intro">Facebook is the best place for local updates, order enquiries, market photos, and community posts. Instagram is where we share product images and behind-the-scenes moments.</p>
+<div class="btn-row" style="justify-content:center">
+<a class="btn green" href="https://www.facebook.com/profile.php?id=61560792312310" target="_blank">Visit Facebook Page</a>
+<a class="btn white" style="border:1px solid var(--line)" href="https://www.instagram.com/specialsalts/" target="_blank">Visit Instagram</a>
+</div>
+</div>
 </section>
 
 <footer>
-  <p><strong>Special Salts</strong> · Bathe in Blessings</p>
-  <p>Homeschool crafted bath salts and body salt scrubs.</p>
-  <p>For external use only.</p>
+<p><strong>Special Salts</strong> · Bathe in Blessings</p>
+<p>Handcrafted in Byford, Western Australia</p>
+<p>Bath salts and body scrubs · For external use only</p>
 </footer>
 
 </body>
