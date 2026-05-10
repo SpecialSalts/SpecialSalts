@@ -30,7 +30,7 @@ body{
   line-height:1.7;
 }
 a{color:inherit}
-img,video{max-width:100%;display:block}
+img{max-width:100%;display:block}
 .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
 .topbar{background:var(--green-dark);color:#fff;font-size:14px}
 .topbar .wrap{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;padding:12px 22px;text-align:center}
@@ -49,17 +49,13 @@ section{padding:78px 0}
 .story-copy h3{margin:0 0 8px;font-family:'Playfair Display',serif;font-size:34px;color:var(--green-dark)}
 .story-copy p{margin:0 0 17px;color:var(--muted);font-size:18px}
 .caption{margin-top:18px;color:#8a7f74;font-size:15px}
-.badge-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
-.badge{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:25px 20px;text-align:center;box-shadow:0 8px 24px rgba(21,63,32,0.05)}
-.badge h3{margin:0 0 8px;font-family:'Playfair Display',serif;font-size:25px;color:var(--green-dark)}
-.badge p{margin:0;color:var(--muted);font-size:15px}
 .product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:38px auto 0}
 .product-card{padding:30px 26px;text-align:left}
 .product-card h3{margin:0 0 10px;font-family:'Playfair Display',serif;font-size:31px;color:var(--green-dark)}
 .product-card p{margin:8px 0;color:var(--muted);font-size:18px}
 .price{font-size:20px!important;font-weight:700;color:var(--ink)!important}
 .media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px}
-.media-card video,.media-card img{width:100%;height:100%;object-fit:cover;min-height:360px;background:#eee}
+.media-card img{width:100%;height:100%;object-fit:cover;min-height:360px;background:#eee}
 .media-card .media-copy{padding:24px}
 .media-copy h3{margin:0 0 8px;font-family:'Playfair Display',serif;font-size:28px;color:var(--green-dark)}
 .media-copy p{margin:0;color:var(--muted)}
@@ -82,17 +78,17 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
 @media(max-width:980px){
   .story-grid,.story-grid.reverse,.media-grid{grid-template-columns:1fr}
   .story-photo img{min-height:420px}
-  .badge-row,.product-grid{grid-template-columns:repeat(2,1fr)}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
   .use-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
   section{padding:58px 0}
   .story-copy{padding:26px 22px}
   .story-copy p,.section-intro,.cta p{font-size:17px}
-  .badge-row,.product-grid{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:1fr}
   .cta{padding:36px 20px}
   .cta h2{font-size:32px}
-  .media-card video,.media-card img{min-height:280px}
+  .media-card img{min-height:280px}
 }
 </style>
 </head>
@@ -107,7 +103,7 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
 </div>
 
 <header>
-  <img src="header.jpg" class="header-image" alt="Special Salts botanical banner">
+  <img src="header.jpg" class="header-image" alt="Special Salts market stall banner">
 </header>
 
 <section>
@@ -116,14 +112,14 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
     <div class="divider"></div>
     <div class="story-grid">
       <div class="story-photo panel">
-        <img src="tyler.jpg" alt="Tyler, creator of Special Salts">
+        <img src="tyler.jpg" alt="Special Salts premium product image">
       </div>
       <div class="story-copy panel">
         <p>Special Salts began as a homeschool project created by Tyler.</p>
         <p>At just 12 years old, Tyler first began making bath salts with his brothers in 2022 as part of their homeschool journey.</p>
         <p>What started as small Christmas gift batches for family and friends has grown into a young local business, with Special Salts now appearing at community markets and local stockists.</p>
         <p>Each blend is handcrafted using simple ingredients, carefully selected essential oils, and a passion for creating beautiful bath and body products people genuinely enjoy using.</p>
-        <div class="caption">Tyler, creator of Special Salts, learning about natural ingredients, product design, and small business through our homeschool journey.</div>
+        <div class="caption">Handcrafted with care through our homeschool journey.</div>
       </div>
     </div>
   </div>
@@ -182,30 +178,6 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
   </div>
 </section>
 
-<section class="section-soft">
-  <div class="wrap">
-    <h2 class="section-title">Meet the Blends</h2>
-    <div class="divider"></div>
-    <p class="section-intro">Watch Tyler introduce the blends in his own words.</p>
-    <div class="media-grid">
-      <div class="media-card panel">
-        <video src="recovery-video.mp4" controls playsinline preload="metadata"></video>
-        <div class="media-copy">
-          <h3>Recovery Blend</h3>
-          <p>Tyler explains the inspiration behind the Recovery blend.</p>
-        </div>
-      </div>
-      <div class="media-card panel">
-        <video src="revive-video.mp4" controls playsinline preload="metadata"></video>
-        <div class="media-copy">
-          <h3>Revive Blend</h3>
-          <p>Tyler explains the inspiration behind the Revive blend.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section>
   <div class="wrap">
     <h2 class="section-title">How To Use</h2>
@@ -243,8 +215,8 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
       <li>Stocked locally at Byford & Districts Country Club</li>
     </ul>
     <div class="media-grid">
-      <div class="media-card panel"><img src="market.jpg" alt="Special Salts at SJ Farmers Market"></div>
-      <div class="media-card panel"><img src="stockist.jpg" alt="Special Salts stocked locally at Byford and Districts Country Club"></div>
+      <div class="media-card panel"><img src="market.jpg" alt="Special Salts at market"></div>
+      <div class="media-card panel"><img src="stockist.jpg" alt="Special Salts stocked locally"></div>
     </div>
   </div>
 </section>
@@ -255,7 +227,7 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
       <h2>Follow the Journey</h2>
       <p>Follow along for product updates, market days, gift bundles, hampers, behind the scenes, and to message us directly.</p>
       <div class="cta-buttons">
-        <a class="cta-button" href="FACEBOOK-LINK-HERE" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a class="cta-button" href="https://www.facebook.com/profile.php?id=61560792312310" target="_blank" rel="noopener noreferrer">Facebook</a>
         <a class="cta-button" href="https://www.instagram.com/specialsalts/" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a class="cta-button" href="mailto:hello@specialsalts.com.au">Email Us</a>
       </div>
@@ -266,7 +238,7 @@ footer a{color:var(--green-dark);font-weight:700;text-decoration:none}
 <footer>
   <p><strong>Special Salts</strong> · Bathe in Blessings</p>
   <p>hello@specialsalts.com.au</p>
-  <p><a href="FACEBOOK-LINK-HERE" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.instagram.com/specialsalts/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+  <p><a href="https://www.facebook.com/profile.php?id=61560792312310" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.instagram.com/specialsalts/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
   <p>For external use only.</p>
 </footer>
 
